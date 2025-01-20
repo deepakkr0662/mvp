@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Graph Screen</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <div class="graph-container">
+        <h1>Graph Data</h1>
+
+        <div class="graph">
+            <h2>Temperature</h2>
+            <canvas id="temperatureChart"></canvas>
+        </div>
+
+        <div class="graph">
+            <h2>Humidity</h2>
+            <canvas id="humidityChart"></canvas>
+        </div>
+
+        <div class="graph">
+            <h2>Battery</h2>
+            <canvas id="batteryChart"></canvas>
+        </div>
+
+        <!-- Button to navigate back to the Navigation Page -->
+        <div class="back-button">
+            <a href="navigation.html"><button>Back to Navigation</button></a>
+        </div>
+    </div>
+
+    <script src="graphs.js"></script>
+</body>
+</html>

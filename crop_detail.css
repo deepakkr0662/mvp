@@ -1,0 +1,55 @@
+/* Basic styling for Crop Detail page with a Green Theme */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f9f4; /* Light green background */
+}
+
+.crop-detail-page {
+    max-width: 800px;
+    margin: 50px auto;
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border: 2px solid #2ecc71; /* Green border */
+}
+
+.page-title {
+    text-align: center;
+    font-size: 24px;
+    color: #27ae60; /* Green color for title */
+}
+
+.crop-info {
+    font-size: 18px;
+    margin-bottom: 20px;
+    color: #2c3e50; /* Darker text for better readability */
+}
+
+.crop-info p {
+    margin: 10px 0;
+}
+
+.crop-info span {
+    font-weight: bold;
+    color: #27ae60; /* Green color for data values */
+}
+
+button {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    background-color: #2ecc71; /* Green button */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    text-align: center;
+}
+
+button:hover {
+    background-color: #27ae60; /* Darker green when hovered */
+}

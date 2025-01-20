@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Profile</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h2>User Profile</h2>
+
+        <!-- Profile details -->
+        <div class="profile-details">
+            <h3>Personal Information</h3>
+            <p><strong>Name:</strong> <span id="userName">Loading...</span></p>
+            <p><strong>Email:</strong> <span id="userEmail">Loading...</span></p>
+            <p><strong>Registered Devices:</strong> <span id="deviceCount">Loading...</span></p>
+        </div>
+
+        <!-- User Activity History -->
+        <div class="activity-history">
+            <h3>Activity History</h3>
+            <table id="activityTable">
+                <thead>
+                    <tr>
+                        <th>Date</th>
+                        <th>Device ID</th>
+                        <th>Activity</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- History will be populated dynamically -->
+                </tbody>
+            </table>
+        </div>
+
+        <!-- Footer with Log Out -->
+        <div class="footer">
+            <button id="logoutBtn" class="btn">Log Out</button>
+        </div>
+    </div>
+
+    <script src="profile.js"></script>
+</body>
+</html>

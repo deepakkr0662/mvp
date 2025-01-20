@@ -1,0 +1,520 @@
+/* Global Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f7fc;
+  color: #333;
+  line-height: 1.6;
+}
+
+a {
+  text-decoration: none;
+  color: #28a745;  /* Green color */
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* Button Styling */
+button {
+  padding: 10px 20px;
+  background-color: #28a745;  /* Green color */
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #218838;  /* Darker Green */
+}
+/* ==========================================
+    Index Page
+========================================== */
+.index-page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 100vh; /* Full viewport height */
+  background-color: #eaf7e2; /* Light green background */
+  font-family: Arial, sans-serif;
+  padding: 20px;
+}
+
+.index-heading {
+  color: #28a745; /* Green color for heading */
+  margin-bottom: 40px;
+  font-size: 2.5rem;
+  text-align: center;
+}
+
+.index-description {
+  color: #333;
+  font-size: 1.2rem;
+  text-align: center;
+  margin-bottom: 40px;
+  max-width: 600px;
+}
+
+.button-container {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  width: 100%;
+}
+
+.button-container .btn {
+  background-color: #28a745; /* Green background for buttons */
+  color: white;
+  padding: 15px 30px;
+  font-size: 1.2rem;
+  border-radius: 8px;
+  text-align: center;
+  width: auto; /* Let the buttons grow according to their text */
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.button-container .btn:hover {
+  background-color: #218838; /* Darker green on hover */
+}
+
+.button-container .btn:active {
+  background-color: #1e7e34; /* Even darker green on click */
+}
+
+footer {
+  margin-top: 50px;
+  color: #999;
+  font-size: 0.9rem;
+  text-align: center;
+}
+
+/* ==========================================
+  Sign-Up / Sign-In Pages
+========================================== */
+.form-container {
+    max-width: 400px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #28a745;  /* Green color */
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border-radius: 4px;
+    border: 1px solid #ddd;
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    background-color: #28a745;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #218838;
+}
+
+p {
+    text-align: center;
+    margin-top: 20px;
+}
+
+p a {
+    color: #28a745;
+}
+
+/* Sign-In Page specific styles */
+.sign-in-container {
+    max-width: 400px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.sign-in-container h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #28a745;  /* Green color */
+}
+
+.sign-in-container label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+}
+
+.sign-in-container input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border-radius: 4px;
+    border: 1px solid #ddd;
+}
+
+.sign-in-container button {
+    width: 100%;
+    padding: 10px;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.sign-in-container button:hover {
+    background-color: #218838;
+}
+
+.sign-in-container p {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.sign-in-container p a {
+    color: #28a745;
+}
+
+/* ==========================================
+    Navigation Page
+========================================== */
+.navigation-page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 100vh; /* Full viewport height */
+  background-color: #eaf7e2; /* Light green background */
+  font-family: Arial, sans-serif;
+  padding: 20px;
+}
+
+h2.navigation-heading {
+  color: #28a745; /* Green color for heading */
+  margin-bottom: 40px; /* Add space below the heading */
+  font-size: 2rem;
+}
+
+.nav-items {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 100%;
+  max-width: 300px; /* Limit the width for better readability */
+}
+
+.nav-item {
+  background-color: #28a745; /* Green background for buttons */
+  color: white;
+  padding: 15px;
+  text-align: center;
+  font-size: 1.2rem;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.nav-item:hover {
+  background-color: #218838; /* Darker green on hover */
+}
+
+.nav-item:active {
+  background-color: #1e7e34; /* Even darker green on click */
+}
+
+footer {
+  margin-top: 50px;
+  color: #999;
+  font-size: 0.9rem;
+}
+
+/* ==========================================
+    Graph Page
+========================================== */
+.graph-container {
+  margin-top: 20px;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+h2.graph-heading {
+  text-align: center;
+  color: #28a745;  /* Green color */
+  margin-bottom: 20px; /* Adds space below the heading */
+}
+
+/* Add spacing between heading and the graph */
+.canvas-container {
+  margin-top: 30px; /* Ensures there's space between the heading and the graph */
+}
+
+.canvas-container canvas {
+  width: 100%;
+  height: 400px; /* Adjust the height for better visibility */
+}
+
+/* Device Status Page Styles */
+
+/* General container styles */
+.device-update-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Heading styles */
+.device-update-container h1,
+.device-update-container h2 {
+  text-align: center;
+  color: #2d6a4f;
+}
+
+/* Table styles */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+  background-color: #fff;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+thead {
+  background-color: #40916c;
+  color: #fff;
+}
+
+th, td {
+  padding: 10px;
+  text-align: center;
+  border: 1px solid #ddd;
+}
+
+tbody tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+/* Alerts Section */
+.alerts {
+  margin-top: 20px;
+  padding: 15px;
+  background-color: #ffcccc;
+  color: #b22222;
+  border-left: 5px solid #b22222;
+  border-radius: 5px;
+  display: none; /* Initially hidden */
+}
+
+/* ==========================================
+    Image Upload Page Styles
+========================================== */
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  margin: 0;
+  padding: 0;
+}
+
+/* Container for the Image Upload Page */
+.container {
+  width: 90%;
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 40px;
+  background-color: #ffffff;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  text-align: center;
+}
+
+/* Heading for Image Upload Page */
+.heading {
+  font-size: 2.5rem;
+  color: #28a745; /* Green color */
+  margin-bottom: 20px;
+}
+
+/* Image upload/capture buttons */
+.upload-options {
+  margin-bottom: 30px;
+}
+
+.upload-options .btn {
+  background-color: #28a745;
+  color: white;
+  padding: 15px 30px;
+  font-size: 1.2rem;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin: 0 10px;
+}
+
+.upload-options .btn:hover {
+  background-color: #218838;
+}
+
+.upload-options .btn:active {
+  background-color: #1e7e34;
+}
+
+/* Image Area */
+#imageArea {
+  margin-bottom: 30px;
+  position: relative;
+}
+
+#uploadedImage {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin-top: 20px;
+  border: 2px solid #28a745;
+  border-radius: 8px;
+  padding: 10px;
+}
+
+/* Suggestions Block */
+.suggestions {
+  margin-top: 40px;
+  padding: 20px;
+  background-color: #e9f7e7;
+  border: 2px solid #28a745;
+  border-radius: 8px;
+}
+
+.suggestions h3 {
+  font-size: 1.8rem;
+  color: #28a745;
+  margin-bottom: 15px;
+}
+
+.suggestions p {
+  font-size: 1.2rem;
+  color: #333;
+}
+
+.suggestions span {
+  font-weight: bold;
+  color: #218838;
+}
+
+/* Submit Button */
+#submitBtn {
+  background-color: #ff5733;
+  color: white;
+  padding: 15px 30px;
+  font-size: 1.2rem;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-top: 20px;
+}
+
+#submitBtn:hover {
+  background-color: #cc4626;
+}
+
+#submitBtn:active {
+  background-color: #b33c1f;
+}
+/* ==========================================
+  User Profile Page
+========================================== */
+.profile-container {
+  max-width: 600px;
+  margin: 50px auto;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.profile-container h1 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #28a745;
+}
+
+.profile-container p {
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+.profile-container .user-detail {
+  font-weight: bold;
+  color: #28a745;  /* Green color */
+}
+
+/* ==========================================
+  Common Styles for All Pages
+========================================== */
+.container {
+  width: 80%;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+header {
+  background-color: #28a745;
+  color: white;
+  padding: 10px 0;
+  text-align: center;
+  font-size: 24px;
+  border-radius: 8px;
+}
+
+footer {
+  background-color: #28a745;
+  color: white;
+  text-align: center;
+  padding: 10px 0;
+  margin-top: 20px;
+  border-radius: 8px;
+}
+
+footer a {
+  color: white;
+}

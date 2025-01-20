@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Upload and Disease Detection</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <div class="container">
+        <h2 class="heading">Upload or Capture Image for Disease Detection</h2>
+
+        <!-- Image upload or capture options -->
+        <div class="upload-options">
+            <button id="uploadBtn" class="btn">Upload Image</button>
+            <button id="captureBtn" class="btn">Capture Image</button>
+        </div>
+
+        <!-- Image display area -->
+        <div id="imageArea">
+            <input type="file" id="imageInput" accept="image/*" style="display:none;">
+            <video id="webcam" width="640" height="480" style="display:none;"></video>
+            <canvas id="capturedCanvas" width="640" height="480" style="display:none;"></canvas>
+            <img id="uploadedImage" style="max-width:100%; display:none;">
+        </div>
+
+        <!-- Suggested information block -->
+        <div id="suggestionsBlock" class="suggestions">
+            <h3>Suggested Information</h3>
+            <p id="diseaseDetected">Disease Detected: <span>None</span></p>
+            <p id="plantIdentified">Plant Identified: <span>Unknown</span></p>
+            <p id="suggestedPesticide">Suggested Pesticide: <span>None</span></p>
+        </div>
+
+        <!-- Submit button to process the image -->
+        <button id="submitBtn" class="btn" style="display:none;">Process Image</button>
+
+        <!-- Button to navigate back to the Navigation Page -->
+        <div class="back-button">
+            <a href="navigation.html"><button>Back to Navigation</button></a>
+        </div>
+    </div>
+
+    <script src="image_upload.js"></script>
+</body>
+</html>

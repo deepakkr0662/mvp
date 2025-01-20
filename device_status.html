@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Device Status</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="device-update-container">
+        <h1>Device Status Page</h1>
+
+        <!-- Device List Section -->
+        <div class="device-list">
+            <h2>Registered Devices</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Device ID</th>
+                        <th>Device Name</th>
+                        <th>Battery (%)</th>
+                        <th>Status</th>
+                        <th>Actions</th>
+                    </tr>
+                </thead>
+                <tbody id="deviceTable">
+                    <!-- Dynamic device rows will be added here -->
+                </tbody>
+            </table>
+        </div>
+
+        <!-- Alert Section -->
+        <div id="alerts" class="alerts"></div>
+
+        <!-- Button to navigate back to the Navigation Page -->
+        <div class="back-button">
+            <a href="navigation.html"><button>Back to Navigation</button></a>
+        </div>
+    </div>
+
+    <script src="device_status.js"></script>
+</body>
+</html>
